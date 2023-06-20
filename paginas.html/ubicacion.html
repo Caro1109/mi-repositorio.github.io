@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../imagenes/logo2.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
 
 </head>
@@ -28,56 +23,96 @@
         </div>
 
         <nav class ="header__menu">
-              <a href="./nosotros.html">NOSOTROS</a>
-              <a href="./departamentos.html">DEPARTAMENTOS</a>
-              <a href="./servicios.html">SERVICIOS</a>
-              <a href="./tarifas.html">TARIFAS</a>
-              <a href="./ubicacion.html">UBICACION</a>
-        </nav>
+            <ul>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <li><a href="./tarifas.html">TARIFAS</a></li>
+                <li><a href="./ubicacion.html">UBICACION</a></li>
+            
         
-        <div class="header__boton">
-            <a href="./reservas.html">RESERVAS</a>
-        </div>
+                <div class="header__boton">
+                    <a href="./reservas.html">RESERVAS</a>
+                </div> 
 
+            </ul>
+
+        </nav>
     </header>
 
-    <div class="ubicacion__parrafo">
-        <h3>Ubicacion</h3>
-        <p>Av. 4 numero 1458 (entre Av.3 y paseo 115)</p>
-    </div>
+    <main>
 
-    <div class="mapa">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.1991442854824!2d-56.9783858!3d-37.26670449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b6091ebc2122d%3A0x53c24a994903262b!2sEl%20Horreo%20Apart!5e0!3m2!1ses-419!2sar!4v1683600350018!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-<!-- inicio de footer --> 
-
-<footer>
-
-    <div class="footer">
-
-        <div class="box__instagram">SEGUINOS!
-            <i class="bi bi-instagram"></i>
+        <div class="titulo__ubicacion">
+            <div class="alert alert-dark" role="alert">
+                DONDE ESTAMOS?
+            </div>
         </div>
+    
+        <p>Nos encontramos en la Av. 4 numero 1458 (entre Av.3 y paseo 115). Estamos a 3 cuadras del mar, a 6 de la peatonal y a 100 metros de la feria de los artesanos.</p>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.1991442854824!2d-56.9783858!3d-37.26670449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b6091ebc2122d%3A0x53c24a994903262b!2sEl%20Horreo%20Apart!5e0!3m2!1ses-419!2sar!4v1683600350018!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="titulo__condiciones">
+            <div class="alert alert-dark" role="alert">
+                CONDICIONES GENERALES
+            </div>
+        </div>
+
         
-        <div class="box__telefonos">
-             <i class="bi bi-telephone-fill"></i> Villa Gesell: (02255) 47-4458 o 1160934458.   
+        <div class="condiciones_generales">
+            <div class="check__in">
+                <img src="../imagenes/time-and-date.png"alt="icono check in">
+                <h3>CHECK IN: 14 HS. CHECK OUT: 10HS.</h3>
+            </div>
+                    
+            <div class="familia">
+                <img src="../imagenes/familia.png" alt="icono familia">
+                <h3>ALQUILAMOS UNICAMENTE A PAREJAS Y GRUPOS FAMILIARES</h3>
+            </div>
+                    
+            <div class="servicios">
+                <img src="../imagenes/servicio-al-cliente.png"alt="icono atencion">
+                <h3>LAS INSTALACIONES SON PARA USO EXCLUSIVO DE NUESTROS HUESPEDES</h3>
+            </div>
+                    
+            <div class="menores">
+                <img src="../imagenes/bebe.png" alt="bebes">
+                <h3>MENORES DE 2 ANOS NO ABONAN ESTADIA</h3>
+            </div>
+        </div>    
+
+    </main>
+
+    <!-- inicio de footer --> 
+
+    <footer>
+
+        <div class="footer">
+
+            <div class="box__instagram">SEGUINOS!
+                <i class="bi bi-instagram"></i>
+            </div>
+        
+            <div class="box__telefonos">
+                <i class="bi bi-telephone-fill"></i> Villa Gesell: (02255) 47-4458 o 1160934458.   
+            </div>
+
+            <div class="box__ubicacion">
+                <i class="bi bi-geo-alt-fill"></i> Av. 4 nº 1458 entre Av. 3 y paseo 115
+            </div>
+
         </div>
 
-        <div class="box__ubicacion">
-             <i class="bi bi-geo-alt-fill"></i> Av. 4 nº 1458 entre Av. 3 y paseo 115
-        </div>
+        <section class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=1138865061"> 
+            <img src="../imagenes/logo WHATSAPP.png" alt="logo whatsapp">
+        </section>
 
-    </div>
-
-   <section class="whatsapp">
-       <a href="https://api.whatsapp.com/send?phone=1138865061"> 
-       <img src="../imagenes/logo WHATSAPP.png" alt="logo whatsapp">
-   </section>
-
-</footer>      
+    </footer>      
  
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
