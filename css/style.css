@@ -59,11 +59,6 @@ body {
 	border-radius: 20px;
 }
 
-.header__boton a:hover {
-	font-weight: bold;
-    color: rgb(95, 21, 8);
-}
-
 @media (max-width:768px) {
 	#header {
 		width: 100%;
@@ -205,9 +200,6 @@ body main .COMENTARIOS h7 {
 	color: white;
 	text-align: center;
 	background-color: black;
-}
-
-.footer {
 	width: 100%;
 	justify-content: center;
 }

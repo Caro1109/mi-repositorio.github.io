@@ -1,0 +1,59 @@
+main {
+    .titulo__tarifas {
+	    font-family: $ColorPrincipal;
+	    font-size: 18px;
+    }
+    .parrafo__tarifas p {
+	    margin-top: 20px;
+	    margin-left: 20px;
+    }
+    .relleno {
+        display: grid;
+        grid-template-columns: 120px 120px 120px 120px 120px 120px;
+        grid-gap: 10px;
+        background-color: #fff;
+        font-family: $base-font-family;
+        color: #dddada;
+        margin: 40px 0px 50px 220px;
+        text-align: center;
+        .box {
+	    background-color: gray;
+	    color: #fff;
+	    padding: 10px;
+	    font-size: 150%;
+	    margin-bottom: 5px;
+	    width: 120%;
+        }
+    }
+    .titulo__pago {
+	    font-family: $base-font-family;
+	    font-size: 18px;
+    }
+    .formas__pago {
+	    width: 100%;
+	    max-width: 100%;
+	    margin-top: 40px;
+	    display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    grid-gap: 50px;
+	    text-align: center;
+        & h3 {
+            font-family: $base-font-family;
+            font-size: 20px;
+        }
+        & .box__banco img {
+    	    width: 90px;
+	        max-width: 90px;
+	        height: auto;
+        }
+        & .box__cash img {
+	        width: 90px;
+	        max-width: 90px;
+	        height: auto;
+        }
+        & .box__mercadopago img{
+	        width: 200px;
+	        height: auto;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+/*header*/
+
+@media (max-width:768px) {
+	#header {
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+	}
+	.header__menu ul {
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-between;
+	}
+	.header__boton {
+		justify-content: space-between;
+		margin-left: 30px;
+	}
+}
+
+/*pagina principal*/
+
+@media (min-width:768px) {
+	.slider img {
+		height: 500px;
+	}
+}
+
+@media (max-width:768) {
+	.slider ul {
+		width: 100%;
+	}
+}
+
+@keyframes automatico {
+
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+
+	40% {margin-left: -100%;}
+	60% {margin-left: -100%;}
+ 
+	70% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+
+@media (max-width:768px) {
+	.contenedor__4fotos {
+		width: 100%;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.COMENTARIOS {
+		display:none;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.footer {
+		width: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 30px;
+		padding: 35px 0px;
+	}
+}
+
+/*departamentos*/
+
+@media screen and (max-width:768px) {
+	.fotos__dptos img {
+		width: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 0px;
+		margin: 0;
+	}
+}
+
+/*tarifas*/
+
+@media (max-width:768px) {
+	.titulo__tarifas{
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+	}
+}
+@media (max-width:768px) {
+	.parrafo__tarifas{
+		text-align: center;
+	}
+}
+@media screen and (max-width:768px) {
+	.relleno {
+		margin:0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 75px 40px 40px 40px 40px 40px;
+		grid-template-rows: 70px 40px 40px 40px 40px 40px;
+		justify-content: center;
+		text-align: center;
+		font-size: 10px;
+	}
+}
+
+@media (max-width:768px) {
+	.titulo__pago{
+		text-align: center;
+	}
+}
+@media only screen and (max-width:768px) {
+	.formas__pago {
+		width: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 30px;
+		padding: 35px 0px;
+	}
+}
+
+/*ubicacion*/
+
+@media (max-width:768px) {
+	.titulo__ubicacion{
+		text-align: center;
+	}
+}
+@media (max-width:768px) {
+	body main p{
+		text-align: center;
+	}
+}
+@media (max-width:768px) {
+	.titulo__condiciones {
+		text-align: center;
+	}
+}
+@media only screen and (max-width:768px) {
+	.condiciones_generales {
+		width: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 30px;
+		padding: 35px 0px;
+	}
+}
