@@ -1,22 +1,35 @@
 main {
     .titulo__ubicacion {
 	    font-size: 18x;
+
+        @include mobile {
+            text-align: center;
+        }
     }
     p {
     	margin: 40px 15px 40px 15px;
-	    font-family: 'Signika', sans-serif;    
+	    font-family: 'Signika', sans-serif; 
+        
+        @include mobile {
+            text-align: center;
+        }
     }
     .mapa {
 	    margin-bottom: 50px;
         iframe {
-        width: 100%;
-	    max-width: 100%;
-        height: 500px;
+            width: 100%;
+	        max-width: 100%;
+            height: 500px;
         }
     }
     .titulo__condiciones {
 	    font-family: $base-font-family;
 	    font-size: 18px;
+    
+        @include mobile {
+            text-align: center;
+        }
+    
     }
     .condiciones_generales {
 	    width: 100%;
@@ -26,12 +39,19 @@ main {
 	    grid-template-columns: repeat(4, 1fr);
 	    grid-gap: 50px;
 	    text-align: center;
+
+        @include mobile {
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        }
         img {
-	    width: 60px;
-	    height: 60px;
+	        width: 60px;
+	        height: 60px;
         }
         h3 {
-	    font-size: 15px;
+	        font-size: 15px;
         }
     }
 } 

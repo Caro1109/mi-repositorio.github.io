@@ -10,18 +10,27 @@
     background-color: black;
     width: 100%;
     justify-content: center;
+
+    @include mobile {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    
     .box__instagram i {
         color: white
     }
-    .whatsapp {
-        position: fixed;
-        border-radius: 50%;
-        top: 550px;
-        right: 0;
-        a img {
-            width: 100%;
-            height: 50px;
-            border-radius: 100%; 
-        }
+}
+
+.whatsapp {
+    position: fixed;
+    border-radius: 50%;
+    top: 550px;
+    right: 0;
+    a img {
+        width: 100%;
+        height: 50px;
+        border-radius: 100%; 
     }
 }

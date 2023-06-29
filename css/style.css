@@ -114,7 +114,7 @@ body .parrafo__bienvenida p {
 	}
 }
 
-@media (max-width:768) {
+@media (max-width:768px) {
 	.slider ul {
 		width: 100%;
 	}

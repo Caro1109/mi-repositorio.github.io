@@ -1,71 +1,3 @@
-#header {
-  display: flex;
-  min-height: 150px;
-  justify-content: space-between;
-  align-items: center;
-  font-family:'Signika', sans-serif;
-  padding: 10px;
-}
-.header__logo {
-  display: flex;
-}
-.header__logo img {
-  height: 100px;
-  margin-right: 10px;
-}
-.header__menu ul {
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-  list-style: none;
-  margin-top: 20px;
-}
-.header__menu ul li {
-  padding: 10px 20px;
-  margin-top: 5px;
-}
-.header__menu ul li a {
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  cursor: pointer;
-}
-.header__menu a:hover {
-  font-weight: bold;
-  color: brown;
-}
-.header__boton {
-  display: flex;
-  justify-content: end;
-}
-.header__boton a {
-	border: 1px solid;
-	background-color: #e74b12;
-	color: aliceblue;
-	font-family:'Signika', sans-serif;
-	text-decoration: none;
-	padding: 15px 20px 15px 20px;
-	border-radius: 20px;
-}
-
-
-@media (max-width: 768px) {
-  #header {
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-  }
-  .header__menu ul {
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-  }
-  .header__boton {
-    justify-content: space-between;
-    margin-left: 30px;
-  }
-}
-
 main .slider {
   width: 100%;
   overflow: hidden;
@@ -85,52 +17,8 @@ main .slider ul li img {
   width: 100%;
   height: 550px;
 }
-main .parrafo__bienvenida p {
-  padding: 3%;
-  text-align: center;
-  font-family: "Signika", sans-serif;
-}
-main .contenedor__4fotos {
-  float: left;
-  width: 25%;
-  max-width: 25%;
-  display: flex;
-  flex-direction: row;
-}
-main .contenedor__4fotos img {
-  width: 100%;
-  height: auto;
-}
-.COMENTARIOS {
-  border: 1px solid grey;
-  padding: 10px;
-  display: flex;
-  width: 100%;
-  max-width: 80%;
-  margin: 0px auto;
-  margin-top: 30%;
-  gap: 25px;
-  border-radius: 10px;
-  text-align: center;
-}
-.COMENTARIOS p {
-  border: 1px solid grey;
-  font-family: "Signika", sans-serif;
-  border-radius: 15px;
-  box-shadow: 9px 5px 5px grey;
-  margin-top: 0;
-}
-.COMENTARIOS p h7 {
-  font-size: 15px;
-}
-
-@media (min-width: 768px) {
-  .slider img {
-    height: 500px;
-  }
-}
-@media (max-width: 768) {
-  .slider ul {
+@media screen and (max-width: 768px) {
+  main .slider {
     width: 100%;
   }
 }
@@ -154,8 +42,20 @@ main .contenedor__4fotos img {
     margin-left: -200%;
   }
 }
-@media (max-width: 768px) {
-  .contenedor__4fotos {
+main .parrafo__bienvenida p {
+  padding: 3%;
+  text-align: center;
+  font-family: "Signika", sans-serif;
+}
+main .contenedor__4fotos {
+  float: left;
+  width: 25%;
+  max-width: 25%;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  main .contenedor__4fotos {
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -163,209 +63,38 @@ main .contenedor__4fotos img {
     padding: 10px;
   }
 }
+main .contenedor__4fotos img {
+  width: 100%;
+  height: auto;
+}
+main .COMENTARIOS {
+  border: 1px solid grey;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  max-width: 80%;
+  margin: 0px auto;
+  margin-top: 30%;
+  gap: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
-  .COMENTARIOS {
+  main .COMENTARIOS {
     display: none;
   }
 }
-.footer {
-  display: grid;
-  max-width: 100%;
-  margin-top: 40px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
-  color: white;
-  text-align: center;
-  background-color: black;
-  width: 100%;
-  justify-content: center;
-}
-.box__instagram i {
-  color: white;
-}
-.whatsapp {
-  position: fixed;
-  border-radius: 50%;
-  top: 550px;
-  right: 0;
-}
-.whatsapp a img {
-  width: 100%;
-  height: 50px;
-  border-radius: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .footer {
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-  }
-}
-/*departamentos*/
-main .departamentos {
-  display: grid;
-  width: 100%;
-}
-.box__pax {
-  background-color: #e74b12;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 150%;
-}
-.fotos__dptos img {
-  display: grid;
-  float: left;
-  grid-template-columns: 100px 100px 100px 100px;
-  padding: 10px;
-  height: 300px;
-  width: 25%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .fotos__dptos img {
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 0px;
-    margin: 0;
-  }
-}
-/*servicios*/
-main .card-group {
-  margin-top: 100px;
-}
-main .card-group h5 {
-  text-align: center;
-}
-main .card-group .card img {
-  width: 100%;
-  height: 300px;
-}
-main .card-group .col p {
-  margin-top: 50px;
-}
-
-/*tarifas*/
-main .titulo__tarifas {
-  font-family: #e74b12;
-  font-size: 18px;
-}
-main .parrafo__tarifas p {
-  margin-top: 20px;
-  margin-left: 20px;
-}
-main .relleno {
-  display: grid;
-  grid-template-columns: 120px 120px 120px 120px 120px 120px;
-  grid-gap: 10px;
-  background-color: #fff;
+main .COMENTARIOS p {
+  border: 1px solid grey;
   font-family: "Signika", sans-serif;
-  color: #dddada;
-  margin: 40px 0px 50px 220px;
-  text-align: center;
+  border-radius: 15px;
+  box-shadow: 9px 5px 5px grey;
+  margin-top: 0;
 }
-main .relleno .box {
-  background-color: gray;
-  color: #fff;
-  padding: 10px;
-  font-size: 150%;
-  margin-bottom: 5px;
-  width: 120%;
-}
-main .titulo__pago {
-  font-family: "Signika", sans-serif;
-  font-size: 18px;
-}
-main .formas__pago {
-  width: 100%;
-  max-width: 100%;
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  text-align: center;
-}
-main .formas__pago h3 {
-  font-family: "Signika", sans-serif;
-  font-size: 20px;
-}
-main .formas__pago .box__banco img {
-  width: 90px;
-  max-width: 90px;
-  height: auto;
-}
-main .formas__pago .box__cash img {
-  width: 90px;
-  max-width: 90px;
-  height: auto;
-}
-main .formas__pago .box__mercadopago img {
-  width: 200px;
-  height: auto;
+main .COMENTARIOS h7 {
+  font-size: 15px;
 }
 
-@media (max-width: 768px) {
-  .titulo__tarifas {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .parrafo__tarifas {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .relleno {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 75px 40px 40px 40px 40px 40px;
-    grid-template-rows: 70px 40px 40px 40px 40px 40px;
-    justify-content: center;
-    text-align: center;
-    font-size: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .titulo__pago {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .formas__pago {
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-  }
-}
-/*nosotros*/
-main .titulo__historia {
-  font-size: 18px;
-}
-main .historia__3fotos {
-  margin-top: 40px;
-  display: flex;
-  gap: 10px;
-}
-main .historia__3fotos img {
-  width: 100%;
-  height: 80%;
-}
-main .historia p {
-  text-align: center;
-  font-size: 20px;
-  margin: 0px 10px 70px 10px;
-}
-
-/*reservas*/
 main form {
   width: 100%;
   display: flex;
@@ -390,13 +119,52 @@ main form .box__RESERVAS .check {
   margin-top: 20px;
 }
 
-/*ubicacion*/
+main .departamentos {
+  display: grid;
+  width: 100%;
+}
+main .box__pax {
+  background-color: #e74b12;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+main .fotos__dptos img {
+  display: grid;
+  float: left;
+  grid-template-columns: 100px 100px 100px 100px;
+  padding: 10px;
+  height: 300px;
+  width: 25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  main .fotos__dptos img {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
+    margin: 0;
+  }
+}
+
 main .titulo__ubicacion {
   font-size: 18x;
+}
+@media screen and (max-width: 768px) {
+  main .titulo__ubicacion {
+    text-align: center;
+  }
 }
 main p {
   margin: 40px 15px 40px 15px;
   font-family: "Signika", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  main p {
+    text-align: center;
+  }
 }
 main .mapa {
   margin-bottom: 50px;
@@ -410,6 +178,11 @@ main .titulo__condiciones {
   font-family: "Signika", sans-serif;
   font-size: 18px;
 }
+@media screen and (max-width: 768px) {
+  main .titulo__condiciones {
+    text-align: center;
+  }
+}
 main .condiciones_generales {
   width: 100%;
   max-width: 100%;
@@ -419,6 +192,14 @@ main .condiciones_generales {
   grid-gap: 50px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  main .condiciones_generales {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
 main .condiciones_generales img {
   width: 60px;
   height: 60px;
@@ -427,26 +208,243 @@ main .condiciones_generales h3 {
   font-size: 15px;
 }
 
-@media (max-width: 768px) {
-  .titulo__ubicacion {
+main .card-group {
+  margin-top: 100px;
+}
+main .card-group h5 {
+  text-align: center;
+}
+main .card-group .card img {
+  width: 100%;
+  height: 300px;
+}
+main .card-group .col p {
+  margin-top: 50px;
+}
+
+main .titulo__tarifas {
+  font-family: #e74b12;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  main .titulo__tarifas {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+main .parrafo__tarifas p {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  main .parrafo__tarifas p {
     text-align: center;
   }
 }
-@media (max-width: 768px) {
-  body main p {
+main .relleno {
+  display: grid;
+  grid-template-columns: 120px 120px 120px 120px 120px 120px;
+  grid-gap: 10px;
+  background-color: #fff;
+  font-family: "Signika", sans-serif;
+  color: #dddada;
+  margin: 40px 0px 50px 220px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  main .relleno {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 75px 40px 40px 40px 40px 40px;
+    grid-template-rows: 70px 40px 40px 40px 40px 40px;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+main .relleno .box {
+  background-color: gray;
+  color: #fff;
+  padding: 10px;
+  font-size: 150%;
+  margin-bottom: 5px;
+  width: 120%;
+}
+main .titulo__pago {
+  font-family: "Signika", sans-serif;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  main .titulo__pago {
     text-align: center;
   }
 }
-@media (max-width: 768px) {
-  .titulo__condiciones {
-    text-align: center;
-  }
+main .formas__pago {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  text-align: center;
 }
-@media only screen and (max-width: 768px) {
-  .condiciones_generales {
+@media screen and (max-width: 768px) {
+  main .formas__pago {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;
   }
+}
+main .formas__pago h3 {
+  font-family: "Signika", sans-serif;
+  font-size: 20px;
+}
+main .formas__pago .box__banco img {
+  width: 90px;
+  max-width: 90px;
+  height: auto;
+}
+main .formas__pago .box__cash img {
+  width: 90px;
+  max-width: 90px;
+  height: auto;
+}
+main .formas__pago .box__mercadopago img {
+  width: 200px;
+  height: auto;
+}
+
+main .titulo__historia {
+  font-size: 18px;
+}
+main .historia__3fotos {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+main .historia__3fotos img {
+  width: 100%;
+  height: 80%;
+}
+main .historia p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0px 10px 70px 10px;
+}
+
+#header {
+  display: flex;
+  min-height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Signika", sans-serif;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  #header {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.header__logo {
+  display: flex;
+}
+.header__logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+.header__menu ul {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .header__menu ul {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+.header__menu ul li {
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+.header__menu ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}
+.header__menu ul li a:hover {
+  font-weight: bold;
+  color: brown;
+}
+
+.header__boton {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 768px) {
+  .header__boton {
+    justify-content: space-between;
+    margin-left: 30px;
+  }
+}
+.header__boton a {
+  border: 1px solid;
+  background-color: #e74b12;
+  color: aliceblue;
+  font-family: "Signika", sans-serif;
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+}
+.header__boton a a:hover {
+  font-weight: bold;
+  color: rgb(95, 21, 8);
+}
+
+.footer {
+  display: grid;
+  max-width: 100%;
+  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  color: white;
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+.footer .box__instagram i {
+  color: white;
+}
+
+.whatsapp {
+  position: fixed;
+  border-radius: 50%;
+  top: 550px;
+  right: 0;
+}
+.whatsapp a img {
+  width: 100%;
+  height: 50px;
+  border-radius: 100%;
 }/*# sourceMappingURL=main.css.map */

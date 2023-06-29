@@ -2,10 +2,22 @@ main {
     .titulo__tarifas {
 	    font-family: $ColorPrincipal;
 	    font-size: 18px;
+
+        @include mobile {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        }
+
     }
     .parrafo__tarifas p {
 	    margin-top: 20px;
 	    margin-left: 20px;
+
+        @include mobile{
+            text-align: center;
+        }
+    
     }
     .relleno {
         display: grid;
@@ -16,18 +28,34 @@ main {
         color: #dddada;
         margin: 40px 0px 50px 220px;
         text-align: center;
+
+        @include mobile {
+            margin:0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 75px 40px 40px 40px 40px 40px;
+            grid-template-rows: 70px 40px 40px 40px 40px 40px;
+            justify-content: center;
+            text-align: center;
+            font-size: 10px;
+        }
+
         .box {
-	    background-color: gray;
-	    color: #fff;
-	    padding: 10px;
-	    font-size: 150%;
-	    margin-bottom: 5px;
-	    width: 120%;
+	        background-color: gray;
+	        color: #fff;
+	        padding: 10px;
+	        font-size: 150%;
+	        margin-bottom: 5px;
+	        width: 120%;
         }
     }
     .titulo__pago {
 	    font-family: $base-font-family;
 	    font-size: 18px;
+
+        @include mobile {
+            text-align: center;
+        }
     }
     .formas__pago {
 	    width: 100%;
@@ -37,21 +65,29 @@ main {
 	    grid-template-columns: repeat(3, 1fr);
 	    grid-gap: 50px;
 	    text-align: center;
-        & h3 {
+
+        @include mobile {
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        }
+
+        h3 {
             font-family: $base-font-family;
             font-size: 20px;
         }
-        & .box__banco img {
+        .box__banco img {
     	    width: 90px;
 	        max-width: 90px;
 	        height: auto;
         }
-        & .box__cash img {
+        .box__cash img {
 	        width: 90px;
 	        max-width: 90px;
 	        height: auto;
         }
-        & .box__mercadopago img{
+        .box__mercadopago img{
 	        width: 200px;
 	        height: auto;
         }
