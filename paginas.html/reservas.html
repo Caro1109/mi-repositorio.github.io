@@ -42,56 +42,59 @@
 
     <main>
         <form>
-            <div class="box__RESERVAS">     
-
-                <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Su Nombre">
+            <div class="box__RESERVAS">    
                 
-                <label for="start">INGRESO:</label>
-                <input type="date" id="start" name="trip-start"
-                value="2023-12-01"
-                min="2023-12-01" max="2024-03-31">
+                <form action="https://formsubmit.co/elhorreoapart@gmail.com" method="POST">
 
-                <label for="start">EGRESO:</label>
-                <input type="date" id="start" name="trip-start"
-                value="2023-12-01"
-                min="2023-12-01" max="2024-03-31">
+                    <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Su Nombre">
+                
+                    <label for="start">INGRESO:</label>
+                    <input type="date" id="start" name="trip-start"
+                    value="2023-12-01"
+                    min="2023-12-01" max="2024-03-31">
 
-                <input type="celular" class="form-control" id="exampleFormControlInput1" placeholder="Su Celular">
+                    <label for="start">EGRESO:</label>
+                    <input type="date" id="start" name="trip-start"
+                    value="2023-12-01"
+                    min="2023-12-01" max="2024-03-31">
+
+                    <input type="celular" class="form-control" id="exampleFormControlInput1" placeholder="Su Celular">
                
-                <div class="cantidad__personas">
-                    <label for="2 adultos">PAX:</label>	
+                    <div class="cantidad__personas">
+                        <label for="2 adultos">PAX:</label>	
                 
-                    <select name="2">
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    </select>
+                        <select name="2">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        </select>
 
-                    <label for="menores">MENORES:</label>	
+                        <label for="menores">MENORES:</label>	
                 
-                    <select name="0 menores">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    </select>
-                </div>
-               
-               
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Su Email">
-                <label for="consulta" class="form-label">CONSULTA</label>
+                        <select name="0 menores">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        </select>
+                    </div>
+                    
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Su Email">
+                    <label for="consulta" class="form-label">CONSULTA</label>
                 
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 
-                <div class="check">
-                    <input type="checkbox" name="acepta" value="1" />Acepta términos y condiciones
-                </div>
+                    <div class="check">
+                        <input type="checkbox" name="acepta" value="1" />Acepta términos y condiciones
+                    </div>
+                </form>
 
                 <div class="boton__enviar">
                     <button type="button" class="btn btn-danger">ENVIAR FORMULARIO</button>
                 </div>
+                
             </div>
         </form>
 
