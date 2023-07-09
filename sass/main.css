@@ -447,4 +447,15 @@ main .historia p {
   width: 100%;
   height: 50px;
   border-radius: 100%;
+}
+@media screen and (max-width: 768px) {
+  .whatsapp {
+    position: fixed;
+    right: 0;
+  }
+  .whatsapp a img {
+    width: 100%;
+    height: 50px;
+    border-radius: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
