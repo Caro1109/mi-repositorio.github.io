@@ -43,20 +43,19 @@
     <main>
         <form>
             <div class="box__RESERVAS">
-                <?php 
-                    $nombre = $_POST['nombre'];
-                    $ingreso = $_POST['ingreso'];
-                    $egreso = $_POST['egreso'];
-                    $celular = 'celular';
-                    $cantidad__personas = $_POST['cantidad__personas'];
-                    $email = $_POST['email'];
-                    $mensaje = "Nombre: ".$nombre."<br> Email: $email<br> Mensaje:".$_POST['mensaje'] <br> ingreso: $ingreso <br> Egreso: $egreso <br> egreso: $egreso <br> Celular: $celular <br>
-                    cantidad__personas: $cantidad__personas <br> Consulta: $mensaje; 
+                <php 
+                    $nombre = $_POST(nombre);
+                    $ingreso = 'Formulario Rellenado';
+                    $egreso = 'Formulario Rellenado';
+                    $celular = 'Formulario Rellenado';
+                    $cantidad__personas = 'Formulario Rellenado';
+                    $email = $_POST(email); 
+                    $mensaje = 'Formulario Rellenado';
                     
-                    if(mail('consultas@elhorreoapart.com.ar', $asunto, $mensaje)){
-                      echo "Correo enviado";
+                    if(mail(consultas@elhorreoapart.com.ar, $asunto: Contacto desde El Horreo Apart)){
+                      echo: Correo enviado
                     }
-                ?>
+                >
                 <form action="contact.php" method="post">
 
                     <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Su Nombre">
