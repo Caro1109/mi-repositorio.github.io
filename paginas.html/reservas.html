@@ -43,22 +43,10 @@
     <main>
         <form>
             <div class="box__RESERVAS">
-                <php 
-                    $nombre = $_POST(nombre);
-                    $ingreso = 'Formulario Rellenado';
-                    $egreso = 'Formulario Rellenado';
-                    $celular = 'Formulario Rellenado';
-                    $cantidad__personas = 'Formulario Rellenado';
-                    $email = $_POST(email); 
-                    $mensaje = 'Formulario Rellenado';
-                    
-                    if(mail(consultas@elhorreoapart.com.ar, $asunto: Contacto desde El Horreo Apart)){
-                      echo: Correo enviado
-                    }
-                >
+
                 <form action="contact.php" method="post">
 
-                    <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Su Nombre">
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Su Nombre">
                 
                     <label for="start">INGRESO:</label>
                     <input type="date" id="start" name="trip-start"
