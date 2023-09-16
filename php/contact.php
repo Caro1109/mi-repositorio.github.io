@@ -1,4 +1,11 @@
 <?php
+
+$user = "c2192176";
+$pass = "ni32goGAku";
+$host = "c2192176.ferozo.com";
+
+$connection = mysqli_connect($host, $user, $pass);
+
 $nombre = $_POST['nombre'];
 $fecha = $_POST['date'];
 $fecha = $_POST['date'];
