@@ -1,18 +1,25 @@
-<?php 
+<?php
+$nombre = $_POST['nombre'];
+$fecha = $_POST['date'];
+$fecha = $_POST['date'];
+$celular = $_POST['celular'];
+$mail = $_POST['email'];
+$mensaje = $_POST['consulta'];
 
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $date = $_POST['trip-start'];
-    $celular = $_POST['celular'];
-    $cantidad__personas = $_POST['cantidad__personas'];
-    $email = $_POST ['email'];
-    $consulta = $_POST['consulta'];
-    $header ="from: elhorreoapart@gmail.com" . "\r\n";
-    $header ="from: consultas@elhorreoapart.com.ar" . "\r\n";
-    $header ="X-Mailer: PHP/". phpversion();
-    $mail = @mail($email,$name,$date,$celular,$cantidad__personas,$consulta,$header);
-    if ($mail){
-        echo "<h7> Mail enviado correctamente!</h7>";
-    }
-}
+$header = 'From: ' . $mail . " \r\n";
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
+$header .= "Mime-Version: 1.0 \r\n";
+$header .= "Content-Type: text/plain";
+
+$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
+$mensaje .= "Su e-mail es: " . $mail . " \r\n";
+$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
+$mensaje .= "Enviado el " . date('d/m/Y', time());
+
+$para = 'elhorreoapart@gmail.com';
+$asunto = 'Mensaje de mi sitio web';
+
+mail($para, $asunto,($mensaje), $header);
+
+header("Location:index.html");
 ?>
